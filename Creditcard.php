@@ -1,7 +1,7 @@
 <?php
 require("Bankrekening.php");
 
-class creditcard implements IbetaalAccount
+class Creditcard implements IbetaalAccount
 {
     private array $debits = [
 
