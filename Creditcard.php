@@ -1,5 +1,5 @@
 <?php
-require("Bankrekening.php");
+require("IbetaalAccount.php");
 
 class Creditcard implements IbetaalAccount
 {
@@ -16,3 +16,6 @@ class Creditcard implements IbetaalAccount
         return true;
     }
 }
+
+$creditCard = new Creditcard();
+$creditCard->betaal(80, "4353535345", "persoon4");

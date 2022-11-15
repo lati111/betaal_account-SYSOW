@@ -1,5 +1,5 @@
 <?php
-require("Bankrekening.php");
+require("IbetaalAccount.php");
 
 class Paypal implements IbetaalAccount
 {
@@ -24,3 +24,6 @@ class Paypal implements IbetaalAccount
         }
     }
 }
+
+$paypal = new Creditcard("username", "password");
+$paypal->betaal(80, "4353535345", "persoon4");

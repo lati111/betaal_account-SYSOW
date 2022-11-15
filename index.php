@@ -11,17 +11,17 @@
     <div>
         <h4>iDeal</h4>
         <img src="ideal.png">
-        <button>betaal</button>
+        <a href="Bankrekening.php"><button>betaal</button></a>
     </div>
     <div>
         <h4>creditcard</h4>
         <img src="creditcard.png">
-        <button>betaal</button>
+        <a href="Creditcard.php"><button>betaal</button></a>
     </div>
     <div>
         <h4>paypal</h4>
         <img src="paypal.png">
-        <button>betaal</button>
+        <a href="Paypal.php"><button>betaal</button></a>
     </div>
     <div id="textDump"></div>
 </body>

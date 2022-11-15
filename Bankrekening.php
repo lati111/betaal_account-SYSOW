@@ -1,5 +1,5 @@
 <?php
-require ("Bankrekening.php");
+require ("IbetaalAccount.php");
 
 class Bankrekening implements IbetaalAccount {
     private string $rekeningNummer = "32235255";
@@ -18,3 +18,6 @@ class Bankrekening implements IbetaalAccount {
         }
     }
 }
+
+$bankrekening = new Bankrekening();
+$bankrekening->betaal(80, "4353535345", "persoon4");
