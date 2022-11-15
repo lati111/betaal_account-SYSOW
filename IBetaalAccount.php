@@ -1,5 +1,5 @@
 <?php
 
 interface IbetaalAccount {
-    public function betaal() : bool;
+    public function betaal(float $hoeveelheid, string $rekeningOntvanger, string $naamOntvanger) : bool;
 }
