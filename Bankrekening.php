@@ -9,6 +9,7 @@ class Bankrekening implements IbetaalAccount {
             echo "U hebt gekozen om te betalen met IDeal.<br>";
             echo "Het bedrag van $hoeveelheid euro wordt afgeschreven van rekeningnummer $rekeningOntvanger<br>";
             echo "Het bedrag wordt overgemaakt aan $naamOntvanger met rekeningnummer $rekeningOntvanger<br>";
+            $this->saldo -=  $hoeveelheid;
             return true;
         } else {
             echo "Uw rekening heeft onvoldoende saldo";
